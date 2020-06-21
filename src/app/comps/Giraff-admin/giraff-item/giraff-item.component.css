@@ -1,0 +1,11 @@
+
+.G-Item{
+    padding: 2px;
+    border: 1px solid yellowgreen;
+    margin: 4px;
+
+}
+.G-Item.bigGiraff{
+   background-color: cyan;
+
+}

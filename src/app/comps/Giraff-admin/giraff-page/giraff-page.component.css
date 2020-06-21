@@ -1,0 +1,8 @@
+.wrap{
+    display: flex;
+}
+
+.force-GiraffItem{
+    display:list-item;
+    width: 40vw;
+}

@@ -1,0 +1,14 @@
+
+
+<div 
+    [attr.GId]= "G.id" 
+    [class]="'G-Item' + (G.isBig ? ' bigGiraff' : ' ')"
+    (click)="clickNoteFn()"
+    >
+    <h3>{{G.name}}</h3>
+    <label-span label="height" [val]="G.height"></label-span>
+    <label-span label="color" [val]="G.color"></label-span>
+    <label-span label="id" [val]="G.id"></label-span>
+    <button (click)="deleteNoteFn()">Delete</button>
+
+</div>

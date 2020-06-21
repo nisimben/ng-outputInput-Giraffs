@@ -1,0 +1,18 @@
+    
+        <h1>Weclome To The World Of  Giraff Admin !!</h1>
+<div class="wrap" [style.background]="bgRnd" >
+    <ul class="force-GiraffItem" >
+         <G-item 
+            *ngFor ="let Giraff of GiraffsArry" 
+            [G]="Giraff" 
+            class="GiraffItem-as-list"
+            (clickNote)="selctedG = Giraff"
+            (deleteNote)="deleteGiraff($event)"
+            (randomColor)="bgRnd = $event"
+            >
+        </G-item>
+    </ul>
+    
+     <app-giraff-details [G]="selctedG"></app-giraff-details>    
+</div>
+ 

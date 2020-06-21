@@ -1,0 +1,9 @@
+<h3>Giraff details</h3>
+
+<div *ngIf ="G" [attr.GId]= "G.id" [class]="'G-Item' + (G.isBig ? ' bigGiraff' : ' ')">
+        <h4>{{G.name}}</h4>
+        <label-span label="height" [val]="G.height"></label-span>
+        <label-span label="color" [val]="G.color"></label-span>
+        <label-span label="id" [val]="G.id"></label-span>
+    
+</div>
