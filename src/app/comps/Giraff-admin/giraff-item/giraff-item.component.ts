@@ -23,8 +23,6 @@ export class GiraffItemComponent implements OnInit {
   }
 
   deleteNoteFn(){
-    // console.log(this.G.id);
-    
     this.deleteNote.emit(this.G.id)
   }
  
