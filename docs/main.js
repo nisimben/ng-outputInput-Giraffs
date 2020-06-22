@@ -219,7 +219,6 @@ class GiraffItemComponent {
         this.clickNote.emit();
     }
     deleteNoteFn() {
-        // console.log(this.G.id);
         this.deleteNote.emit(this.G.id);
     }
     ngOnInit() {
@@ -372,6 +371,7 @@ class GiraffPageComponent {
         for (let index = 0; index < this.GiraffsArry.length; index++) {
             if (GId == this.GiraffsArry[index].id) {
                 this.GiraffsArry.splice(index, 1);
+                this.selctedG = null;
             }
         }
     }
